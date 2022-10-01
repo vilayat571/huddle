@@ -1,5 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import Card from "./components/regularcomponents/Card";
+import Fotter from "./components/regularcomponents/Fotter";
 import Header from "./components/regularcomponents/Header";
 import { Container } from "./components/styled/Container.styled";
 import Global from "./components/styled/Global";
@@ -27,6 +28,7 @@ function App() {
             <Card key={index} item={item} />
           ))}
         </Container>
+        <Fotter />
       </>
     </ThemeProvider>
   );
