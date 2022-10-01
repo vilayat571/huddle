@@ -1,8 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle`
+const Global = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -11,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 body{
     background-color: ${({ theme }) => theme.body};
     color: hsl(192,100%,9%);
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Nunito',sans-serif;
     font-size: 1.15em;
 }
 
@@ -23,3 +24,5 @@ img{
     max-width: 100%;
 }
 `;
+
+export default Global;

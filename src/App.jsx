@@ -1,25 +1,31 @@
 import { ThemeProvider } from "styled-components";
+import Card from "./components/regularcomponents/Card";
 import Header from "./components/regularcomponents/Header";
 import { Container } from "./components/styled/Container.styled";
-import { GlobalStyles } from "./components/styled/Global";
+import Global from "./components/styled/Global";
+import content from "./content";
 
 function App() {
-
   const theme = {
     colors: {
       header: "#ebfbff",
       body: "#fff",
       fotter: "#003333",
     },
+    responsive: {
+      mobile: "768px",
+    },
   };
-  
+
   return (
     <ThemeProvider theme={theme}>
       <>
-        <GlobalStyles />
+        <Global />
         <Header />
         <Container>
-          <h1>Hello World!</h1>
+          {content.map((item, index) => (
+            <Card key={index} item={item} />
+          ))}
         </Container>
       </>
     </ThemeProvider>
