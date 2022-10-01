@@ -1,6 +1,7 @@
 import { Container } from "../styled/Container.styled";
 import { Flex } from "../styled/Flex.styled";
 import { FotterStyled } from "../styled/Fotter.styled";
+import Socialicons from "./Socialicons";
 
 function Fotter() {
   return (
@@ -28,7 +29,7 @@ function Fotter() {
               <li>Blog</li>
               <li>Contact Us</li>
             </ul>
-            {/* Social Icons */}
+            <Socialicons />
           </Flex>
           <p>&copy; 2022 Huddle. Powered by Vilayat Safarov.</p>
         </Container>

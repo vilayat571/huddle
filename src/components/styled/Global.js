@@ -2,9 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 const Global = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-
 *{
     box-sizing: border-box;
 }
@@ -12,7 +9,7 @@ const Global = createGlobalStyle`
 body{
     background-color: ${({ theme }) => theme.body};
     color: hsl(192,100%,9%);
-    font-family: 'Nunito',sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 1.15em;
 }
 
